@@ -1,0 +1,17 @@
+{%extends 'base.html' %}
+{%block content%}
+
+{% if logged%}
+<h1>you are authenticate</h1>
+{%else%}
+<h1>you are not!!</h1>
+{%endif%}
+<a href="{% url 'contact' %}">
+  <button>contact</button>
+
+</a>
+<a href="{% url 'about' %}">
+  <button>about</button>
+</a>
+
+{%endblock%}

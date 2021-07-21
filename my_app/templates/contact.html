@@ -1,0 +1,11 @@
+{%extends 'base.html' %}
+{%block content%}
+
+<h1>this is contact page!!</h1>
+<ul>
+    {%for contact in contacts %}
+    <li>{{forloop.counter}}-{{contact.user_name}} | {{contact.address}} | {{contact.email}} </li>
+    {%endfor%}
+</ul>
+
+{%endblock%}
